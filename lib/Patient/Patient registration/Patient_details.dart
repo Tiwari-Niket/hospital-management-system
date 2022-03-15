@@ -152,8 +152,8 @@ class _DetailsState extends State<Details> {
                     ),
                     validator: (value) {
                       RegExp regex = new RegExp(r'^.{10,}$');
-                      if (value!.length == 0 || value.length != 10) {
-                        return "Phone no. is incorrect";
+                      if (value!.length == 0) {
+                        return "Phone no. cannot be empty";
                       }
                       if (!RegExp("^[0-9]").hasMatch(value)) {
                         return ("Invalid Phone no.");

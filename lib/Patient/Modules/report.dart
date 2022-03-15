@@ -6,25 +6,25 @@ class ListViewBuilder extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text("REPORTS")),
       body: ListView.builder(
-          // itemCount: 5,
+          itemCount: 5,
           itemBuilder: (BuildContext context, int index) {
-        return ListTile(
-          leading: Icon(Icons.list),
-          title: Text("Report $index"),
-          trailing: Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              IconButton(
-                icon: const Icon(Icons.arrow_forward),
-                onPressed: () {
-                  Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (context) => Screen2()));
-                },
+            return ListTile(
+              leading: Icon(Icons.list),
+              title: Text("Report $index"),
+              trailing: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  IconButton(
+                    icon: const Icon(Icons.circle),
+                    onPressed: () {
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context) => Screen2()));
+                    },
+                  ),
+                ],
               ),
-            ],
-          ),
-        );
-      }),
+            );
+          }),
     );
   }
 }
@@ -49,7 +49,7 @@ class _Screen2State extends State<Screen2> {
             Navigator.of(context).push(
                 MaterialPageRoute(builder: (context) => ListViewBuilder()));
           },
-          child: Text('BACK'),
+          child: Text('GO BACK'),
         ),
       ),
     );

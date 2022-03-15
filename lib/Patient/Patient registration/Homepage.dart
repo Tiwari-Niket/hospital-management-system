@@ -1,7 +1,9 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, duplicate_ignore, camel_case_types
 
 import 'package:flutter/material.dart';
+import 'package:register/Doctor/Doctor%20registration/login1.dart';
 import 'package:register/Patient/Patient%20registration/register.dart';
+import 'package:register/start.dart';
 
 import 'login.dart';
 

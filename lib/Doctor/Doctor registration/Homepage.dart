@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:register/Doctor/Doctor%20registration/login1.dart';
 import 'package:register/Doctor/Doctor%20registration/register1.dart';
+import 'package:register/start.dart';
 
 class homepage1 extends StatefulWidget {
   const homepage1({Key? key}) : super(key: key);
