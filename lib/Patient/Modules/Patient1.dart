@@ -44,8 +44,8 @@ class _Patient1State extends State<Patient1> {
             ),
             Image(
               image: AssetImage('assets/user.png'),
-              height: 200,
-              width: 200,
+              height: 215,
+              width: 215,
             ),
             SizedBox(
               height: 10,
@@ -65,56 +65,6 @@ class _Patient1State extends State<Patient1> {
                   },
                   child: Stack(
                     children: [
-                      GestureDetector(
-                        onTap: () {
-                          CircularProgressIndicator();
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => Details(),
-                            ),
-                          );
-                        },
-                        child: Stack(
-                          children: [
-                            Container(
-                              width: double.infinity,
-                              margin: EdgeInsets.symmetric(horizontal: 20),
-                              padding: EdgeInsets.symmetric(vertical: 30),
-                              height: 140,
-                              child: Container(
-                                height: double.maxFinite,
-                                width: double.infinity,
-                                color: Colors.blue[100],
-                                child: Center(
-                                  child: Text(
-                                    "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t EDIT YOUR ACCOUNT",
-                                    style: TextStyle(fontSize: 20),
-                                  ),
-                                ),
-                              ),
-                            ),
-                            Container(
-                              margin: EdgeInsets.only(left: 4),
-                              child: CircleAvatar(
-                                radius: 70,
-                                backgroundColor:
-                                    Color.fromARGB(255, 23, 138, 231),
-                                child: Center(
-                                  child: Image(
-                                    image: AssetImage('assets/resume.png'),
-                                    height: 80,
-                                    width: 80,
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      SizedBox(
-                        height: 20,
-                      ),
                       Container(
                         margin: EdgeInsets.symmetric(horizontal: 20),
                         padding: EdgeInsets.symmetric(vertical: 30),
@@ -243,6 +193,55 @@ class _Patient1State extends State<Patient1> {
                           child: Center(
                             child: Image(
                               image: AssetImage('assets/medicine.png'),
+                              height: 80,
+                              width: 80,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                GestureDetector(
+                  onTap: () {
+                    CircularProgressIndicator();
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Details(),
+                      ),
+                    );
+                  },
+                  child: Stack(
+                    children: [
+                      Container(
+                        width: double.infinity,
+                        margin: EdgeInsets.symmetric(horizontal: 20),
+                        padding: EdgeInsets.symmetric(vertical: 30),
+                        height: 140,
+                        child: Container(
+                          height: double.maxFinite,
+                          width: double.infinity,
+                          color: Colors.blue[100],
+                          child: Center(
+                            child: Text(
+                              "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t EDIT YOUR ACCOUNT",
+                              style: TextStyle(fontSize: 20),
+                            ),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(left: 4),
+                        child: CircleAvatar(
+                          radius: 70,
+                          backgroundColor: Color.fromARGB(255, 23, 138, 231),
+                          child: Center(
+                            child: Image(
+                              image: AssetImage('assets/resume.png'),
                               height: 80,
                               width: 80,
                             ),
