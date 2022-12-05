@@ -1,6 +1,6 @@
 # hospital_app
 
-A new Flutter project - Hospital Management System using Firebase.
+A New Flutter project - Hospital Management System using Firebase.
 
 ## Getting Started
 
